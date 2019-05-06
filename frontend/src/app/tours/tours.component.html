@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-card *ngFor="let tour of tours">
+    <a routerLink="/tours/{{ tour.id }}" class="link">
+      <img mat-card-image src="{{ gettourImg(tour) }}" />
+      <mat-card-title>{{ tour.name }}</mat-card-title>
+      <mat-card-content>{{ getStartToEnd(tour) }}</mat-card-content>
+    </a>
+  </mat-card>
+</div>

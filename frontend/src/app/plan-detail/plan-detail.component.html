@@ -1,0 +1,64 @@
+<div class="img" [ngStyle]="styleObj"></div>
+<div class="contents">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>access_time</mat-icon>
+          <span>{{ time }}</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>flight_takeoff</mat-icon>
+          <span>{{ plan.departure }}</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>flight_land</mat-icon>
+          <span>{{ plan.destination }}</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>airline_seat_recline_normal</mat-icon>
+          <span>{{ plan.note2 }}</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>map</mat-icon>
+          <span>{{ plan.note1 }}番ホーム</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <p class="header">
+          <mat-icon>notes</mat-icon>
+          <span>{{ plan.memo }}番ホーム</span>
+        </p>
+      </mat-expansion-panel-header>
+      <p>うんこ</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

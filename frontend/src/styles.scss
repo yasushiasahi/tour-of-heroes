@@ -1,1 +1,23 @@
+@import '~ress/ress.css';
+@import '~@angular/material/theming';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto,"Noto Sans JP","Helvetica Neue",sans-serif',
+);
+@include mat-core($custom-typography);
+
+body {
+  font-family: Roboto, 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}

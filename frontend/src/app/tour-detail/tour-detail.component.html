@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div *ngFor="let hours of days" class="day">
+    <div *ngFor="let hour of hours" class="day_hour">
+      <p>{{ hour }}</p>
+      <span></span>
+    </div>
+  </div>
+  <mat-card
+    *ngFor="let plan of plans"
+    [ngStyle]="plan.styleObj"
+    [ngClass]="plan.classObj"
+    class="plan"
+  >
+    <a routerLink="/plans/{{ plan.id }}">
+      <p>
+        {{ plan.name }} {{ plan.startAt | date: 'H:mm' }} ~
+        {{ plan.endAt | date: 'H:mm' }}
+      </p>
+      <div class="icon">
+        <mat-icon>{{ plan.icon }}</mat-icon>
+      </div>
+    </a>
+  </mat-card>
+</div>

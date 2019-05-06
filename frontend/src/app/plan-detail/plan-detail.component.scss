@@ -1,0 +1,16 @@
+.img {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  font-size: 14px;
+  > span {
+    margin-left: 20px;
+    display: inline-block;
+  }
+}

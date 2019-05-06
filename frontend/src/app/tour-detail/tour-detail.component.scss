@@ -1,0 +1,42 @@
+.wrapper {
+  padding: 0 10px;
+  position: relative;
+}
+.day {
+  &_hour {
+    //padding: 15px 0;
+    height: 35px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    > p {
+      padding-right: 10px;
+      font-size: 10px;
+    }
+    > span {
+      height: 1px;
+      background-color: #ccc;
+    }
+  }
+}
+.plan {
+  width: 70%;
+  padding: 3px 5px;
+  position: absolute;
+  right: 15px;
+  > p {
+    font-size: 12px;
+  }
+  &.train {
+    background-color: #4286f4;
+    color: #fff;
+  }
+  .icon {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    align-items: center;
+  }
+}
